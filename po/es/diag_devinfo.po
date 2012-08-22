@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2012-03-18 18:45+0200\n"
-"Last-Translator: josevteg <josevteg@gmail.com>\n"
+"PO-Revision-Date: 2012-08-21 22:32+0200\n"
+"Last-Translator: José Vicente <josevteg@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.4\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 msgid "Add"
 msgstr "Añadir"
@@ -27,19 +27,27 @@ msgid "Configure"
 msgstr "Configurar"
 
 msgid "Configure Scans"
-msgstr ""
+msgstr "Explorar configuraciones"
 
 msgid ""
 "Configure scanning for devices on specified networks. Decreasing 'Timeout', "
 "'Repeat Count', and/or 'Sleep Between Requests' may speed up scans, but also "
 "may fail to find some devices."
 msgstr ""
+"Configure la exploración de dispositivos en las redes "
+"especificadas.Reduciendo 'Espera', 'Repeticiones' y/o 'Parar entre "
+"peticiones' puede acelerar las exploración, pero también puede que no "
+"encuentre algunos dispositivos."
 
 msgid ""
 "Configure scanning for supported SIP devices on specified networks. "
 "Decreasing 'Timeout', 'Repeat Count', and/or 'Sleep Between Requests' may "
 "speed up scans, but also may fail to find some devices."
 msgstr ""
+"Configure la exploración de dispositivos SIP soportados en las redes "
+"especificadas. Reduciendo 'Espera', 'Repeticiones' y/o 'Parar entre "
+"peticiones' puede acelerar las exploración, pero también puede que no "
+"encuentre algunos dispositivos."
 
 msgid "Delete"
 msgstr "Borrar"
@@ -48,7 +56,7 @@ msgid "Device Scan Config"
 msgstr "Configuración del escaneo de dispositivos"
 
 msgid "Device Type"
-msgstr ""
+msgstr "Tipo de dispositivo"
 
 msgid "Devices discovered for"
 msgstr "Dispositivos encontrados para"
@@ -66,7 +74,7 @@ msgid "End of MAC address range"
 msgstr "Fin del rango de direcciones MAC"
 
 msgid "Go to relevant configuration page"
-msgstr ""
+msgstr "Ir a la página de configuración pertinente"
 
 msgid "IP Address"
 msgstr "Dirección IP"
@@ -84,36 +92,36 @@ msgid "MAC Address"
 msgstr "Dirección MAC"
 
 msgid "MAC Device Info Overrides"
-msgstr ""
+msgstr "Ignorar la información del dispositivo MAC"
 
 msgid "MAC Device Override"
-msgstr "Anular MAC del dispositivo"
+msgstr "Ignorar MAC del dispositivo"
 
 msgid "MAC range and information used to override system and IEEE databases"
 msgstr ""
-"Dirección MAC e información usada para anular el sistema y bases de datos "
+"Dirección MAC e información usada para ignorar el sistema y bases de datos "
 "IEEE"
 
 msgid "Milliseconds to sleep between requests (default 100)"
 msgstr "Milisegundos a detenerse entre peticiones (100 por defecto)"
 
 msgid "Model"
-msgstr ""
+msgstr "Modelo"
 
 msgid "Name"
 msgstr "Nombre"
 
 msgid "Network Device Scan"
-msgstr ""
+msgstr "Exploración de dispositivos de red"
 
 msgid "Network Device Scanning Configuration"
-msgstr ""
+msgstr "Configuración de la exploración de dispositivos de red"
 
 msgid "Networks to scan for devices"
-msgstr ""
+msgstr "Redes en las que escanear dispositivos"
 
 msgid "Networks to scan for supported devices"
-msgstr ""
+msgstr "Redes en las que escanear dispositivos soportados"
 
 msgid "No SIP devices"
 msgstr "No hay dispositivos SIP"
@@ -131,12 +139,12 @@ msgid ""
 "Override the information returned by the MAC to Device Info Script (mac-to-"
 "devinfo) for a specified range of MAC Addresses"
 msgstr ""
-"Anular la información devuelta por el script de información MAC a "
+"Ignorar la información devuelta por el script de información MAC a "
 "dispositivo (mac-to-devinfo) para el rango de direcciones MAC que se "
 "especifica"
 
 msgid "Perform Scans (this can take a few minutes)"
-msgstr ""
+msgstr "Realizar exploraciones (puede llevar unos minutos)"
 
 msgid "Phone Information"
 msgstr "Información de teléfono"
@@ -151,7 +159,7 @@ msgid "Phones"
 msgstr "Teléfonos"
 
 msgid "Ports"
-msgstr ""
+msgstr "Puertos"
 
 msgid "Raw"
 msgstr "Sin tratar"
@@ -160,7 +168,7 @@ msgid "Repeat Count"
 msgstr "Número de repeticiones"
 
 msgid "Repeat Scans (this can take a few minutes)"
-msgstr ""
+msgstr "Repetir exploraciones (puede llevar unos minutos)"
 
 msgid "SIP Device Information"
 msgstr "Información de dispositivos SIP"
@@ -175,16 +183,16 @@ msgid "SIP Devices on Network"
 msgstr "Dispositivos SIP en red"
 
 msgid "SIP devices discovered for"
-msgstr ""
+msgstr "Dispositivos SIP para los que descubrir"
 
 msgid "Scan for devices on specified networks."
-msgstr "Explorar por dispositivos en las redes especificadas"
+msgstr "Buscar dispositivos en las redes especificadas."
 
 msgid "Scan for supported SIP devices on specified networks."
-msgstr ""
+msgstr "Explorar dispositivos SIP soportados en las redes especificadas"
 
 msgid "Scanning Configuration"
-msgstr ""
+msgstr "Configuración de la exploración"
 
 msgid "Sleep Between Requests"
 msgstr "Detenerse entre peticiones"
@@ -193,22 +201,22 @@ msgid "Subnet"
 msgstr "Subred"
 
 msgid "This section contains no values yet"
-msgstr ""
+msgstr "Esta sección aún no tiene valores"
 
 msgid "Time to wait for responses in seconds (default 10)"
-msgstr "Tiempo a esperar por respuestas en segundos (10 por defecto)"
+msgstr "Esperar de respuestas en segundos (10 por defecto)"
 
 msgid "Timeout"
-msgstr "Tiempo de espera"
+msgstr "Espera"
 
 msgid "Use Configuration"
-msgstr ""
+msgstr "Use la configuración"
 
 msgid "Vendor"
-msgstr ""
+msgstr "Vendedor"
 
 msgid "check other networks"
-msgstr "comprobar otras redes"
+msgstr "comprueba otras redes"
 
 msgid "Scans for devices on specified networks."
-msgstr "Scans for devices on specified networks."
+msgstr "Explora dispositivos en las redes especificadas."
