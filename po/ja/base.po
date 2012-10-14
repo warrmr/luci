@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2012-04-25 13:00+0200\n"
+"PO-Revision-Date: 2012-08-30 16:46+0200\n"
 "Last-Translator: Kentaro <kentaro.matsuyama@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.4\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid "(%d minute window, %d second interval)"
 msgstr "(%d 分幅, %d 秒間隔)"
@@ -253,7 +253,7 @@ msgid "Antenna 2"
 msgstr "アンテナ 2"
 
 msgid "Antenna Configuration"
-msgstr ""
+msgstr "アンテナ設定"
 
 msgid "Any zone"
 msgstr "全てのゾーン"
@@ -271,7 +271,7 @@ msgid "Associated Stations"
 msgstr "認証済み端末"
 
 msgid "Atheros 802.11%s Wireless Controller"
-msgstr ""
+msgstr "Atheros 802.11%s 無線LANコントローラ"
 
 msgid "Authentication"
 msgstr "認証"
@@ -355,10 +355,10 @@ msgid "Bring up on boot"
 msgstr "デフォルトで起動する"
 
 msgid "Broadcom 802.11%s Wireless Controller"
-msgstr ""
+msgstr "Broadcom 802.11%s 無線LANコントローラ"
 
 msgid "Broadcom BCM%04x 802.11 Wireless Controller"
-msgstr ""
+msgstr "Broadcom BCM%04x 802.11 無線LANコントローラ"
 
 msgid "Buffered"
 msgstr "バッファ"
@@ -536,7 +536,7 @@ msgid "DHCP-Options"
 msgstr "DHCPオプション"
 
 msgid "DHCPv6 Leases"
-msgstr ""
+msgstr "DHCPv6 リース"
 
 msgid "DNS"
 msgstr "DNS"
@@ -545,7 +545,7 @@ msgid "DNS forwardings"
 msgstr "DNSフォワーディング"
 
 msgid "DUID"
-msgstr ""
+msgstr "DUID"
 
 msgid "Debug"
 msgstr "デバッグ"
@@ -732,14 +732,14 @@ msgstr "PPPリンクのIPv6ネゴシエーションを有効にする"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "ジャンボフレーム・パススルーを有効にする"
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "TFTPサーバーを有効にする"
 
 msgid "Enable VLAN functionality"
 msgstr "VLAN機能を有効にする"
-
-msgid "Enable builtin NTP server"
-msgstr "内蔵のNTPサーバーを有効にする"
 
 msgid "Enable learning and aging"
 msgstr "ラーニング・エイジング機能を有効にする"
@@ -901,6 +901,9 @@ msgstr "周波数ホッピング"
 msgid "GHz"
 msgstr ""
 
+msgid "GPRS only"
+msgstr ""
+
 msgid "Gateway"
 msgstr "ゲートウェイ"
 
@@ -917,7 +920,7 @@ msgid "Generate archive"
 msgstr "バックアップアーカイブの作成"
 
 msgid "Generic 802.11%s Wireless Controller"
-msgstr ""
+msgstr "802.11%s 無線LANコントローラ"
 
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "入力されたパスワードが一致しません。パスワードは変更されませんでした!"
@@ -958,7 +961,7 @@ msgid ""
 msgstr "SSH公開鍵認証で使用するSSH公開鍵を1行づつペーストしてください。"
 
 msgid "Hermes 802.11b Wireless Controller"
-msgstr ""
+msgstr "Hermes 802.11b 無線LANコントローラ"
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>の隠匿"
@@ -1037,22 +1040,22 @@ msgid "IPv6 only"
 msgstr "IPv6のみ"
 
 msgid "IPv6 prefix"
-msgstr ""
+msgstr "IPv6 プレフィクス"
 
 msgid "IPv6 prefix length"
-msgstr ""
+msgstr "IPv6 プレフィクス長"
 
 msgid "IPv6-Address"
-msgstr ""
+msgstr "IPv6-アドレス"
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6-in-IPv4 (RFC4213)"
 
 msgid "IPv6-over-IPv4 (6rd)"
-msgstr ""
+msgstr "IPv6-over-IPv4 (6rd)"
 
 msgid "IPv6-over-IPv4 (6to4)"
-msgstr ""
+msgstr "IPv6-over-IPv4 (6to4)"
 
 msgid "Identity"
 msgstr "識別子"
@@ -1081,10 +1084,11 @@ msgid ""
 "slow process as the swap-device cannot be accessed with the high datarates "
 "of the <abbr title=\"Random Access Memory\">RAM</abbr>."
 msgstr ""
-"物理メモリが不足する場合、一時的にデータをより大容量の<abbr title=\"Random "
-"Access Memory\">RAM</abbr>デバイスに退避することが出来ます。ただし、データの"
-"退避は非常に遅い処理であり、スワップするデバイスには高転送レートで<abbr "
-"title=\"Random Access Memory\">RAM</abbr>にアクセスすることはできません。"
+"物理メモリが不足する場合、一時的にデータをより大容量な<abbr title=\"Random "
+"Access Memory\">RAM</abbr>デバイスにスワップすることが出来ます。ただし、デー"
+"タのスワップは非常に遅い処理であるため、スワップするデバイスには高速に<abbr "
+"title=\"Random Access Memory\">RAM</abbr>にアクセスすることができなくなる恐れ"
+"があります。"
 
 msgid "Ignore Hosts files"
 msgstr "ホストファイルを無視する"
@@ -1156,7 +1160,7 @@ msgid "Interfaces"
 msgstr "インターフェース"
 
 msgid "Internal Server Error"
-msgstr ""
+msgstr "内部サーバーエラー"
 
 msgid "Invalid"
 msgstr "入力値が不正です"
@@ -1174,8 +1178,8 @@ msgid ""
 "It appears that you try to flash an image that does not fit into the flash "
 "memory, please verify the image file!"
 msgstr ""
-"あなたが更新しようとしたイメージファイルはこのフラッシュメモリに適合しませ"
-"ん。もう一度イメージファイルを確認してください!"
+"更新しようとしたイメージファイルはこのフラッシュメモリに適合しません。もう一"
+"度イメージファイルを確認してください!"
 
 msgid "Java Script required!"
 msgstr "JavaScriptを有効にしてください!"
@@ -1357,10 +1361,10 @@ msgid "MAC-List"
 msgstr "MAC-リスト"
 
 msgid "MB/s"
-msgstr ""
+msgstr "MB/s"
 
 msgid "MHz"
-msgstr ""
+msgstr "MHz"
 
 msgid "MTU"
 msgstr "MTU"
@@ -1387,7 +1391,7 @@ msgid "Maximum number of leased addresses."
 msgstr "リースするアドレスの最大数です"
 
 msgid "Mbit/s"
-msgstr ""
+msgstr "Mbit/s"
 
 msgid "Memory"
 msgstr "メモリー"
@@ -1559,7 +1563,7 @@ msgid "Notice"
 msgstr "注意"
 
 msgid "Nslookup"
-msgstr ""
+msgstr "Nslookup"
 
 msgid "OK"
 msgstr "OK"
@@ -1725,7 +1729,7 @@ msgid "Physical Settings"
 msgstr "デバイス設定"
 
 msgid "Ping"
-msgstr ""
+msgstr "Ping"
 
 msgid "Pkts."
 msgstr "パケット"
@@ -1748,6 +1752,9 @@ msgstr "ポート %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1759,7 +1766,7 @@ msgid "Prevents client-to-client communication"
 msgstr "クライアント同士の通信を制限します"
 
 msgid "Prism2/2.5/3 802.11b Wireless Controller"
-msgstr ""
+msgstr "Prism2/2.5/3 802.11b 無線LANコントローラ"
 
 msgid "Proceed"
 msgstr "続行"
@@ -1782,6 +1789,9 @@ msgstr "新しいインターフェースのプロトコル"
 msgid "Protocol support is not installed"
 msgstr "プロトコルサポートがインストールされていません"
 
+msgid "Provide NTP server"
+msgstr ""
+
 msgid "Provide new network"
 msgstr "新しいネットワークを設定する"
 
@@ -1801,7 +1811,7 @@ msgid "RX Rate"
 msgstr "受信レート"
 
 msgid "RaLink 802.11%s Wireless Controller"
-msgstr ""
+msgstr "RaLink 802.11%s 無線LANコントローラ"
 
 msgid "Radius-Accounting-Port"
 msgstr "Radiusアカウントサーバー・ポート番号"
@@ -2478,7 +2488,7 @@ msgid "Total Available"
 msgstr "合計"
 
 msgid "Traceroute"
-msgstr ""
+msgstr "Traceroute"
 
 msgid "Traffic"
 msgstr "トラフィック"
@@ -2521,6 +2531,9 @@ msgstr "タイプ"
 
 msgid "UDP:"
 msgstr "UDP:"
+
+msgid "UMTS only"
+msgstr ""
 
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
@@ -2684,10 +2697,10 @@ msgstr ""
 "す。"
 
 msgid "Waiting for changes to be applied..."
-msgstr ""
+msgstr "変更を適用中です..."
 
 msgid "Waiting for command to complete..."
-msgstr ""
+msgstr "コマンド実行中です..."
 
 msgid "Waiting for router..."
 msgstr "ルーターに接続中..."
@@ -2760,6 +2773,9 @@ msgstr "全て"
 msgid "auto"
 msgstr "自動"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr "ブリッジ"
 
@@ -2770,10 +2786,10 @@ msgid "creates a bridge over specified interface(s)"
 msgstr "指定したインターフェースでブリッジを作成します"
 
 msgid "dB"
-msgstr ""
+msgstr "dB"
 
 msgid "dBm"
-msgstr ""
+msgstr "dBm"
 
 msgid "disable"
 msgstr "無効"
@@ -2791,6 +2807,12 @@ msgstr ""
 msgid "forward"
 msgstr ""
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "ヘルプ"
 
@@ -2804,19 +2826,22 @@ msgid "input"
 msgstr ""
 
 msgid "kB"
-msgstr ""
+msgstr "kB"
 
 msgid "kB/s"
-msgstr ""
+msgstr "kB/s"
 
 msgid "kbit/s"
-msgstr ""
+msgstr "kbit/s"
 
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "ローカル <abbr title=\"Domain Name System\">DNS</abbr>ファイル"
 
 msgid "no"
 msgstr "いいえ"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "なし"
@@ -2856,6 +2881,9 @@ msgstr "はい"
 
 msgid "« Back"
 msgstr "« 戻る"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "内蔵のNTPサーバーを有効にする"
 
 #~ msgid "Active Leases"
 #~ msgstr "有効なリース"

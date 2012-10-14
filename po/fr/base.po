@@ -751,14 +751,14 @@ msgstr "Activer la négociation IPv6 sur le lien PPP"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Activer la circulation de très grandes trames (Jumbo)"
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "Activer le serveur TFTP"
 
 msgid "Enable VLAN functionality"
 msgstr "Acviter la gestion des VLANs"
-
-msgid "Enable builtin NTP server"
-msgstr "Activer le serveur NTP intégré"
 
 msgid "Enable learning and aging"
 msgstr "Activer l'apprentissage et la péremption"
@@ -919,6 +919,9 @@ msgid "Frequency Hopping"
 msgstr "Sauts en fréquence"
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1782,6 +1785,9 @@ msgstr "Port %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr "Le port %d n'est pas marqué dans plusieurs VLANs !"
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1815,6 +1821,9 @@ msgstr "Protocole de la nouvelle interface"
 
 msgid "Protocol support is not installed"
 msgstr "La gestion du protocole n'est pas installée"
+
+msgid "Provide NTP server"
+msgstr ""
 
 msgid "Provide new network"
 msgstr "Donner un nouveau réseau"
@@ -2581,6 +2590,9 @@ msgstr "Type"
 msgid "UDP:"
 msgstr "UDP :"
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
@@ -2822,6 +2834,9 @@ msgstr "n'importe lequel"
 msgid "auto"
 msgstr "auto"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr "ponté"
 
@@ -2851,6 +2866,12 @@ msgstr "fichier dans lequel les baux DHCP seront stockés"
 msgid "forward"
 msgstr "transfert"
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "aide"
 
@@ -2877,6 +2898,9 @@ msgstr "fichier de résolution local"
 
 msgid "no"
 msgstr "non"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "aucun"
@@ -2916,6 +2940,9 @@ msgstr "oui"
 
 msgid "« Back"
 msgstr "« Retour"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "Activer le serveur NTP intégré"
 
 #~ msgid "Active Leases"
 #~ msgstr "Baux actifs"

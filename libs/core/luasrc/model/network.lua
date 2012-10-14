@@ -20,8 +20,7 @@ limitations under the License.
 local type, next, pairs, ipairs, loadfile, table
 	= type, next, pairs, ipairs, loadfile, table
 
-local tonumber, tostring, math, i18n
-	= tonumber, tostring, math, luci.i18n
+local tonumber, tostring, math = tonumber, tostring, math
 
 local require = require
 
@@ -33,6 +32,7 @@ local sys = require "luci.sys"
 local utl = require "luci.util"
 local dsp = require "luci.dispatcher"
 local uci = require "luci.model.uci"
+local lng = require "luci.i18n"
 
 module "luci.model.network"
 
@@ -384,7 +384,17 @@ function del_network(self, n)
 
 		_uci_real:foreach("wireless", "wifi-iface",
 			function(s)
-				if s.network == n then
+				local net
+				local rest = { }
+				for net in utl.imatch(s.network) do
+					if net ~= n then
+						rest[#rest+1] = net
+					end
+				end
+				if #rest > 0 then
+					_uci_real:set("wireless", s['.name'], "network",
+					              table.concat(rest, " "))
+				else
 					_uci_real:delete("wireless", s['.name'], "network")
 				end
 			end)
@@ -421,8 +431,18 @@ function rename_network(self, old, new)
 
 			_uci_real:foreach("wireless", "wifi-iface",
 				function(s)
-					if s.network == old then
-						_uci_real:set("wireless", s['.name'], "network", new)
+					local net
+					local list = { }
+					for net in utl.imatch(s.network) do
+						if net == old then
+							list[#list+1] = new
+						else
+							list[#list+1] = net
+						end
+					end
+					if #list > 0 then
+						_uci_real:set("wireless", s['.name'], "network",
+						              table.concat(list, " "))
 					end
 				end)
 
@@ -594,7 +614,7 @@ function get_status_by_route(self, addr, mask)
 			if s and s.route then
 				local rt
 				for _, rt in ipairs(s.route) do
-					if rt.enabled and rt.target == addr and rt.mask == mask then
+					if rt.target == addr and rt.mask == mask then
 						return net, s
 					end
 				end
@@ -678,9 +698,12 @@ function protocol.ifname(self)
 					num[s.device] = num[s.device]
 						and num[s.device] + 1 or 1
 
-					if s.network == self.sid then
-						ifname = "%s.network%d" %{ s.device, num[s.device] }
-						return false
+					local net
+					for net in utl.imatch(s.network) do
+						if net == self.sid then
+							ifname = "%s.network%d" %{ s.device, num[s.device] }
+							return false
+						end
 					end
 				end
 			end)
@@ -695,13 +718,13 @@ end
 function protocol.get_i18n(self)
 	local p = self:proto()
 	if p == "none" then
-		return i18n.translate("Unmanaged")
+		return lng.translate("Unmanaged")
 	elseif p == "static" then
-		return i18n.translate("Static address")
+		return lng.translate("Static address")
 	elseif p == "dhcp" then
-		return i18n.translate("DHCP client")
+		return lng.translate("DHCP client")
 	else
-		return i18n.translate("Unknown")
+		return lng.translate("Unknown")
 	end
 end
 
@@ -879,9 +902,13 @@ function protocol.get_interface(self)
 			function(s)
 				if s.device then
 					num[s.device] = num[s.device] and num[s.device] + 1 or 1
-					if s.network == self.sid then
-						ifn = "%s.network%d" %{ s.device, num[s.device] }
-						return false
+
+					local net
+					for net in utl.imatch(s.network) do
+						if net == self.sid then
+							ifn = "%s.network%d" %{ s.device, num[s.device] }
+							return false
+						end
 					end
 				end
 			end)
@@ -910,9 +937,13 @@ function protocol.get_interfaces(self)
 			function(s)
 				if s.device then
 					num[s.device] = num[s.device] and num[s.device] + 1 or 1
-					if s.network == self.sid then
-						ifn = "%s.network%d" %{ s.device, num[s.device] }
-						wfs[ifn] = interface(ifn, self)
+
+					local net
+					for net in utl.imatch(s.network) do
+						if net == self.sid then
+							ifn = "%s.network%d" %{ s.device, num[s.device] }
+							wfs[ifn] = interface(ifn, self)
+						end
 					end
 				end
 			end)
@@ -1032,7 +1063,7 @@ end
 function interface.get_i18n(self)
 	if self.wif then
 		return "%s: %s %q" %{
-			i18n.translate("Wireless Network"),
+			lng.translate("Wireless Network"),
 			self.wif:active_mode(),
 			self.wif:active_ssid() or self.wif:active_bssid()
 		}
@@ -1044,17 +1075,17 @@ end
 function interface.get_type_i18n(self)
 	local x = self:type()
 	if x == "wifi" then
-		return i18n.translate("Wireless Adapter")
+		return lng.translate("Wireless Adapter")
 	elseif x == "bridge" then
-		return i18n.translate("Bridge")
+		return lng.translate("Bridge")
 	elseif x == "switch" then
-		return i18n.translate("Ethernet Switch")
+		return lng.translate("Ethernet Switch")
 	elseif x == "vlan" then
-		return i18n.translate("VLAN Interface")
+		return lng.translate("VLAN Interface")
 	elseif x == "tunnel" then
-		return i18n.translate("Tunnel Interface")
+		return lng.translate("Tunnel Interface")
 	else
-		return i18n.translate("Ethernet Adapter")
+		return lng.translate("Ethernet Adapter")
 	end
 end
 
@@ -1365,7 +1396,7 @@ function wifinet.active_mode(self)
 end
 
 function wifinet.active_mode_i18n(self)
-	return i18n.translate(self:active_mode())
+	return lng.translate(self:active_mode())
 end
 
 function wifinet.active_ssid(self)
@@ -1454,15 +1485,15 @@ end
 
 function wifinet.shortname(self)
 	return "%s %q" %{
-		i18n.translate(self:active_mode()),
+		lng.translate(self:active_mode()),
 		self:active_ssid() or self:active_bssid()
 	}
 end
 
 function wifinet.get_i18n(self)
 	return "%s: %s %q (%s)" %{
-		i18n.translate("Wireless Network"),
-		i18n.translate(self:active_mode()),
+		lng.translate("Wireless Network"),
+		lng.translate(self:active_mode()),
 		self:active_ssid() or self:active_bssid(),
 		self:ifname()
 	}

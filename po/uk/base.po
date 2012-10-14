@@ -753,14 +753,14 @@ msgstr "Увімкнути узгодження IPv6 для PPP-з'єднань"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Пропускати Jumbo-фрейми"
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "Увімкнути TFTP-сервер"
 
 msgid "Enable VLAN functionality"
 msgstr "Увімкнути підтримку VLAN"
-
-msgid "Enable builtin NTP server"
-msgstr "Увімкнути вбудований NTP-сервер"
 
 msgid "Enable learning and aging"
 msgstr "Увімкнути learning та aging"
@@ -918,6 +918,9 @@ msgid "Frequency Hopping"
 msgstr "Frequency Hopping"
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1784,6 +1787,9 @@ msgstr "Порт %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1815,6 +1821,9 @@ msgstr "Протокол нового інтерфейсу"
 
 msgid "Protocol support is not installed"
 msgstr "Підтримка протоколу не інстальована"
+
+msgid "Provide NTP server"
+msgstr ""
 
 msgid "Provide new network"
 msgstr "Постачити нову мережу"
@@ -2552,6 +2561,9 @@ msgstr "Тип"
 msgid "UDP:"
 msgstr "UDP:"
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
@@ -2790,6 +2802,9 @@ msgstr "будь-який"
 msgid "auto"
 msgstr "авто"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr "зв'язано"
 
@@ -2821,6 +2836,12 @@ msgstr ""
 msgid "forward"
 msgstr "переслати"
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "довідка"
 
@@ -2849,6 +2870,9 @@ msgstr ""
 
 msgid "no"
 msgstr "ні"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "нема нічого"
@@ -2888,6 +2912,9 @@ msgstr "так"
 
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "Увімкнути вбудований NTP-сервер"
 
 #~ msgid "Active Leases"
 #~ msgstr "Активні оренди"

@@ -750,14 +750,14 @@ msgstr "Ενεργοποίηση διαπραγμάτευσης IPv6 πάνω σ
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Ενεργοποίηση διέλευσης Jumbo Frame"
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "Ενεργοποίηση εξυπηρετητή TFTP"
 
 msgid "Enable VLAN functionality"
 msgstr "Ενεργοποίηση λειτουργίας VLAN"
-
-msgid "Enable builtin NTP server"
-msgstr "Ενεργοποίηση ενσωματωμένου εξυπηρετητή NTP"
 
 msgid "Enable learning and aging"
 msgstr "Ένεργοποίηση learning and aging"
@@ -917,6 +917,9 @@ msgid "Frequency Hopping"
 msgstr "Frequency Hopping"
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1766,6 +1769,9 @@ msgstr "Θύρα %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1798,6 +1804,9 @@ msgstr "Πρωτόκολλο νέας διεπαφής"
 
 msgid "Protocol support is not installed"
 msgstr "Η υποστήριξη πρωτοκόλλου δεν έχει εκγατασταθεί"
+
+msgid "Provide NTP server"
+msgstr ""
 
 msgid "Provide new network"
 msgstr ""
@@ -2508,6 +2517,9 @@ msgstr "Τύπος"
 msgid "UDP:"
 msgstr "UDP:"
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
@@ -2737,6 +2749,9 @@ msgstr ""
 msgid "auto"
 msgstr "αυτόματα"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr ""
 
@@ -2769,6 +2784,12 @@ msgstr ""
 msgid "forward"
 msgstr "προώθηση"
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "βοήθεια"
 
@@ -2795,6 +2816,9 @@ msgstr "τοπικό αρχείο <abbr title=\"Domain Name System\">DNS</abbr>"
 
 msgid "no"
 msgstr "όχι"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "κανένα"
@@ -2834,6 +2858,9 @@ msgstr "ναι"
 
 msgid "« Back"
 msgstr "« Πίσω"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "Ενεργοποίηση ενσωματωμένου εξυπηρετητή NTP"
 
 #~ msgid "Active Leases"
 #~ msgstr "Ενεργά Leases"

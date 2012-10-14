@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2011-10-10 15:15+0200\n"
+"PO-Revision-Date: 2012-09-04 11:50+0200\n"
 "Last-Translator: Staszek <fistaszek@tlen.pl>\n"
 "Language-Team: none\n"
 "Language: pl\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.4\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid ""
 "<em>Via proxy</em> routes requests to the given target via the specifed "
@@ -32,7 +32,7 @@ msgid "Allowed clients"
 msgstr "Akceptowane klienty"
 
 msgid "Allowed connect ports"
-msgstr "akceptowane porty połączenia"
+msgstr "Akceptowane porty połączenia"
 
 msgid "Bind address"
 msgstr "zwiąż adres"
@@ -55,19 +55,25 @@ msgid ""
 "By default, filtering is done based on domain names. Enable this to match "
 "against URLs instead"
 msgstr ""
+"Domyślnie filtrowanie jest wykonywane w oparciu o nazwy domen. Włącz tę "
+"opcję, aby zamiast tego używać URL-i."
 
 msgid ""
 "By default, the filter rules act as blacklist. Enable this option to only "
 "allow matched URLs or domain names"
 msgstr ""
+"Domyślnie, reguły filtra działają jako czarna lista. Zaznacz tę opcję, aby "
+"zezwalać wyłącznie na pasujące URL-e lub nazwy domen."
 
 msgid ""
 "Can be either an IP address or range, a domain name or \".\" for any host "
 "without domain"
 msgstr ""
+"Może być adresem lub zakresem adresów IP, nazwą domeny lub \".\" dla dowolnego "
+"hosta bez domeny."
 
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguracja"
 
 msgid "Connection timeout"
 msgstr "Limit czasu połączenia"
@@ -82,7 +88,7 @@ msgid "Error page"
 msgstr "Strona błędu"
 
 msgid "Failed to retrieve statistics from url:"
-msgstr ""
+msgstr "Nieudane pobieranie statystyk z URL-a:"
 
 msgid "Filter by RegExp"
 msgstr "Filtruj z użyciem rozszerzonych wyrażeń regularnych"
@@ -111,8 +117,9 @@ msgstr "Plik szablonu HTML używany do prezentacji statystyk"
 msgid "HTML template file to serve when HTTP errors occur"
 msgstr "Plik szablonu HTML używany do prezentacji komunikatów błędu"
 
+# Zgaduję, że to ma coś wspólnego z nagłówkami zapytań - stąd takie tłumaczenie.
 msgid "Header whitelist"
-msgstr ""
+msgstr "Biała lista nagłówków"
 
 msgid ""
 "List of IP addresses or ranges which are allowed to use the proxy server"
@@ -178,98 +185,107 @@ msgid "Minimum number of prepared idle processes"
 msgstr "Minimalna liczba przygotowanych bezczynnych procesów"
 
 msgid "Number of idle processes to start when launching Tinyproxy"
-msgstr ""
+msgstr "Liczba bezczynnych procesów do włączenia podczas uruchamiania Tinyproxy"
 
 msgid "Plaintext file with URLs or domains to filter. One entry per line"
 msgstr ""
+"Plik tekstowy z URL-ami lub domenami do filtowania. Jeden wpis na linię."
 
 msgid "Policy"
-msgstr ""
+msgstr "Polityka"
 
 msgid "Privacy settings"
-msgstr ""
+msgstr "Ustawienia prywatności"
 
 msgid "Reject access"
-msgstr ""
+msgstr "Odmów dostępu"
 
 msgid "Server Settings"
-msgstr ""
+msgstr "Ustawienia serwera"
 
 msgid "Server limits"
-msgstr ""
+msgstr "Limity serwera"
 
 msgid ""
 "Specifies HTTP header names which are allowed to pass-through, all others "
 "are discarded. Leave empty to disable header filtering"
 msgstr ""
+"Określa nazwy nagłówków HTTP, które mogą zostać przesłane dalej. Pozostałe "
+"będą odrzucone. Pozostaw puste, aby wyłączyć filtrowanie nagłówków."
 
 msgid "Specifies the HTTP port Tinyproxy is listening on for requests"
-msgstr ""
+msgstr "Określa port, na którym Tinyproxy będzie oczekiwać żądań HTTP."
 
 msgid "Specifies the Tinyproxy hostname to use in the Via HTTP header"
-msgstr ""
+msgstr "Określa nazwę hosta używaną przez Tinyproxy w nagłówku HTTP \"Via\"."
 
 msgid ""
 "Specifies the address Tinyproxy binds to for outbound forwarded requests"
 msgstr ""
+"Określ adres, z którym zostanie powiązane Tinyproxy dla wychodzących "
+"przekazywanych żądań"
 
 msgid "Specifies the addresses Tinyproxy is listening on for requests"
-msgstr ""
+msgstr "Określa adresy, z których Tinyproxy oczekuje żądań."
 
 msgid "Specifies the group name the Tinyproxy process is running as"
-msgstr ""
+msgstr "Określ nazwę grupy, pod jaką będzie pracował proces Tinyproxy"
 
 msgid ""
 "Specifies the upstream proxy to use for accessing the target host. Format is "
 "<code>address:port</code>"
 msgstr ""
+"Określ serwer proxy typu upstream, który ma zostać użyty w przypadku dostępu "
+"do hosta docelowego. Format to <code>adres:port</code>"
 
 msgid "Specifies the user name the Tinyproxy process is running as"
-msgstr ""
+msgstr "Określ nazwę użytkownika, pod jaką będzie pracował proces Tinyproxy"
 
 msgid "Start spare servers"
-msgstr ""
+msgstr "Uruchamiane serwery zapasowe"
 
 msgid "Statistics page"
-msgstr ""
+msgstr "Strona statystyk"
 
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 msgid "Target host"
-msgstr ""
+msgstr "Host docelowy"
 
 msgid "Tinyproxy"
-msgstr ""
+msgstr "Tinyproxy"
 
 msgid "Tinyproxy Status"
-msgstr ""
+msgstr "Status serwera Tinyproxy"
 
 msgid "Tinyproxy is a small and fast non-caching HTTP(S)-Proxy"
-msgstr ""
+msgstr "Tinyproxy to mały i szybki niecacheujący serwer proxy HTTP(S)"
 
 msgid "Upstream Proxies"
-msgstr ""
+msgstr "Serwery proxy typu upstream"
 
 msgid ""
 "Upstream proxy rules define proxy servers to use when accessing certain IP "
 "addresses or domains."
 msgstr ""
+"Reguły serwerów proxy typu upstream definiują serwery proxy, które mają "
+"zostać użyte w przypadku dostępu do określonych adresów IP lub domen."
 
 msgid "Use syslog"
-msgstr ""
+msgstr "Użyj sysloga"
 
 msgid "User"
-msgstr ""
+msgstr "Użytkownik"
 
 msgid "Via hostname"
-msgstr ""
+msgstr "Nazwa hosta via"
 
 msgid "Via proxy"
-msgstr ""
+msgstr "Proxy via"
 
 msgid "Writes log messages to syslog instead of a log file"
-msgstr ""
+msgstr "Zapisuje komunikaty do sysloga zamiast pliku dziennika"
 
 msgid "X-Tinyproxy header"
-msgstr ""
+msgstr "Nagłówek X-Tinyproxy"

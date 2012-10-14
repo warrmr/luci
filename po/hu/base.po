@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2012-06-29 12:30+0200\n"
+"PO-Revision-Date: 2012-09-13 18:30+0200\n"
 "Last-Translator: Gábor <vargalex@freemail.hu>\n"
 "Language-Team: none\n"
 "Language: hu\n"
@@ -259,7 +259,7 @@ msgid "Antenna 2"
 msgstr "2-es antenna"
 
 msgid "Antenna Configuration"
-msgstr ""
+msgstr "Antenna beállítások"
 
 msgid "Any zone"
 msgstr "Bármelyik zóna"
@@ -277,7 +277,7 @@ msgid "Associated Stations"
 msgstr "Kapcsolódó kliensek"
 
 msgid "Atheros 802.11%s Wireless Controller"
-msgstr ""
+msgstr "Atheros 802.11%s vezeték-nélküli vezérlő"
 
 msgid "Authentication"
 msgstr "Hitelesítés"
@@ -362,10 +362,10 @@ msgid "Bring up on boot"
 msgstr "Hozza fel a rendszer indításakor"
 
 msgid "Broadcom 802.11%s Wireless Controller"
-msgstr ""
+msgstr "Broadcom 802.11%s vezeték-nélküli vezérlő"
 
 msgid "Broadcom BCM%04x 802.11 Wireless Controller"
-msgstr ""
+msgstr "Broadcom BCM%04x 802.11 vezeték-nélküli vezérlő"
 
 msgid "Buffered"
 msgstr "Átmeneti tárban van"
@@ -545,7 +545,7 @@ msgid "DHCP-Options"
 msgstr "DHCP beállítások"
 
 msgid "DHCPv6 Leases"
-msgstr ""
+msgstr "DHCPv6 bérletek"
 
 msgid "DNS"
 msgstr "DNS"
@@ -743,14 +743,14 @@ msgstr "IPv6 egyeztetés engedélyezése a PPP linken"
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Óriás keretek átengedésének engedélyezése"
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "TFTP kiszolgáló engedélyezése"
 
 msgid "Enable VLAN functionality"
 msgstr "VLAN funkció engedélyezése"
-
-msgid "Enable builtin NTP server"
-msgstr "Beépített NTP kiszolgáló engedélyezése"
 
 msgid "Enable learning and aging"
 msgstr "Tanulás és aging engedélyezése"
@@ -911,6 +911,9 @@ msgstr "Frekvencia ugrás"
 msgid "GHz"
 msgstr ""
 
+msgid "GPRS only"
+msgstr ""
+
 msgid "Gateway"
 msgstr "Átjáró"
 
@@ -927,7 +930,7 @@ msgid "Generate archive"
 msgstr "Archívum készítése"
 
 msgid "Generic 802.11%s Wireless Controller"
-msgstr ""
+msgstr "Általános 802.11%s vezeték-nélküli vezérlő"
 
 msgid "Given password confirmation did not match, password not changed!"
 msgstr "A megadott jelszavak nem egyeznek, a jelszó nem lett megváltoztatva!"
@@ -1769,6 +1772,9 @@ msgstr "Port %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr "A %d port egyszerre több VLAN-ban is cimkézetlen!"
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1802,6 +1808,9 @@ msgstr "Az új interfész protokollja"
 
 msgid "Protocol support is not installed"
 msgstr "Protokoll támogatás nincs telepítve"
+
+msgid "Provide NTP server"
+msgstr ""
 
 msgid "Provide new network"
 msgstr "Új hálózat nyújtása"
@@ -2232,7 +2241,7 @@ msgid "Switch %q (%s)"
 msgstr "Kapcsoló %q (%s)"
 
 msgid "Switch protocol"
-msgstr "Kapcsoló prot"
+msgstr "Protokoll csere"
 
 msgid "Sync with browser"
 msgstr "Szinkronizálás a böngészővel"
@@ -2541,6 +2550,9 @@ msgstr "Típus"
 msgid "UDP:"
 msgstr "UDP:"
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
@@ -2782,6 +2794,9 @@ msgstr "bármelyik"
 msgid "auto"
 msgstr "automatikus"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr "áthidalt"
 
@@ -2813,6 +2828,12 @@ msgstr ""
 msgid "forward"
 msgstr "továbbítás"
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "súgó"
 
@@ -2839,6 +2860,9 @@ msgstr "helyi <abbr title=\"Domain Name System\">DNS</abbr> fájl"
 
 msgid "no"
 msgstr "nem"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "nincs"
@@ -2878,6 +2902,9 @@ msgstr "igen"
 
 msgid "« Back"
 msgstr "« Vissza"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "Beépített NTP kiszolgáló engedélyezése"
 
 #~ msgid "Active Leases"
 #~ msgstr "Aktív bérletek"

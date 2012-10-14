@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: LuCI: base\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2012-08-17 19:58+0300\n"
+"PO-Revision-Date: 2012-09-29 16:17+0300\n"
 "Last-Translator: Roman A. aka BasicXP <x12ozmouse@ya.ru>\n"
 "Language-Team: Russian <x12ozmouse@ya.ru>\n"
 "Language: ru\n"
@@ -748,14 +748,14 @@ msgstr "Включить IPv6-согласование на PPP-соединен
 msgid "Enable Jumbo Frame passthrough"
 msgstr "Пропускать Jumbo-кадры"
 
+msgid "Enable NTP client"
+msgstr "Включить NTP-клиент"
+
 msgid "Enable TFTP server"
 msgstr "Включить TFTP-сервер"
 
 msgid "Enable VLAN functionality"
 msgstr "Включить поддержку VLAN"
-
-msgid "Enable builtin NTP server"
-msgstr "Включить встроенный NTP-сервер"
 
 msgid "Enable learning and aging"
 msgstr "Включить изучение и устаревание (learning/aging)"
@@ -916,6 +916,9 @@ msgstr "Скачкообразная перестройка частоты"
 
 msgid "GHz"
 msgstr "ГГц"
+
+msgid "GPRS only"
+msgstr "Только GPRS"
 
 msgid "Gateway"
 msgstr "Шлюз"
@@ -1777,6 +1780,9 @@ msgstr "Порт %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr "Порт %d нетегирован в нескольких VLANах!"
 
+msgid "Port status:"
+msgstr "Состояние порта:"
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1810,6 +1816,9 @@ msgstr "Протокол нового интерфейса"
 
 msgid "Protocol support is not installed"
 msgstr "Поддержка протокола не установлена"
+
+msgid "Provide NTP server"
+msgstr "Включить NTP-сервер"
 
 msgid "Provide new network"
 msgstr "Предоставлять новую сеть"
@@ -2574,6 +2583,9 @@ msgstr "Тип"
 msgid "UDP:"
 msgstr "UDP:"
 
+msgid "UMTS only"
+msgstr "Только UMTS"
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr "UMTS/GPRS/EV-DO"
 
@@ -2815,6 +2827,9 @@ msgstr "любой"
 msgid "auto"
 msgstr "авто"
 
+msgid "baseT"
+msgstr "baseT"
+
 msgid "bridged"
 msgstr "соед. мостом"
 
@@ -2846,6 +2861,12 @@ msgstr ""
 msgid "forward"
 msgstr "перенаправить"
 
+msgid "full-duplex"
+msgstr "полный дуплекс"
+
+msgid "half-duplex"
+msgstr "полудуплекс"
+
 msgid "help"
 msgstr "помощь"
 
@@ -2872,6 +2893,9 @@ msgstr "локальный <abbr title=\"Служба доменных имён\
 
 msgid "no"
 msgstr "нет"
+
+msgid "no link"
+msgstr "нет соединения"
 
 msgid "none"
 msgstr "ничего"
@@ -2911,6 +2935,9 @@ msgstr "да"
 
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "Enable builtin NTP server"
+#~ msgstr "Включить встроенный NTP-сервер"
 
 #~ msgid "Active Leases"
 #~ msgstr "Активные аренды"

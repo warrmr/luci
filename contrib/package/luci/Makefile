@@ -280,6 +280,7 @@ endef
 $(eval $(call module,admin-core,Web UI Core module,+luci-lib-web +luci-proto-core +luci-i18n-english))
 $(eval $(call module,admin-mini,LuCI Essentials - stripped down and user-friendly,+luci-mod-admin-core @BROKEN))
 $(eval $(call module,admin-full,LuCI Administration - full-featured for full control,+luci-mod-admin-core +luci-lib-ipkg))
+$(eval $(call module,failsafe,LuCI Fail-Safe - Fail-Safe sysupgrade module,+luci-mod-admin-core))
 $(eval $(call module,rpc,LuCI RPC - JSON-RPC API,+luci-lib-json))
 $(eval $(call module,freifunk,LuCI Freifunk module,+luci-mod-admin-full +luci-lib-json +PACKAGE_luci-mod-freifunk:freifunk-firewall +freifunk-common +community-profiles))
 $(eval $(call module,niu,NIU - Next Generation Interface,+luci-mod-admin-core @BROKEN))
@@ -331,6 +332,9 @@ $(eval $(call application,firewall,Firmware and Portforwarding application,\
 
 $(eval $(call application,freifunk-policyrouting,Policy routing for mesh traffic,\
         +PACKAGE_luci-app-freifunk-policyrouting:freifunk-policyrouting))
+
+$(eval $(call application,freifunk-widgets,Widgets for the Freifunk index page,\
+        +PACKAGE_luci-app-freifunk-widgets:luci-mod-freifunk))
 
 $(eval $(call application,meshwizard, Shellscript based wizard to setup mesh networks,\
         +PACKAGE_luci-app-freifunk-meshwizard:meshwizard))
@@ -407,7 +411,7 @@ $(eval $(call application,polipo,LuCI Support for the Polipo Proxy,\
 	+PACKAGE_luci-app-polipo:polipo))
 
 $(eval $(call application,openvpn,LuCI Support for OpenVPN,\
-	+PACKAGE_luci-app-openvpn:openvpn))
+	+PACKAGE_luci-app-openvpn:openvpn @BROKEN))
 
 $(eval $(call application,p2pblock,LuCI Support for the Freifunk P2P-Block addon,\
 	luci-app-firewall +PACKAGE_luci-app-p2pblock:freifunk-p2pblock))
@@ -562,6 +566,7 @@ $(eval $(call translation,hebrew,Hebrew))
 $(eval $(call translation,romanian,Romanian))
 $(eval $(call translation,ukrainian,Ukrainian))
 $(eval $(call translation,hungarian,Hungarian))
+$(eval $(call translation,polish,Polish))
 
 
 ### Collections ###

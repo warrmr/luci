@@ -707,13 +707,13 @@ msgstr ""
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr ""
 
 msgid "Enable VLAN functionality"
-msgstr ""
-
-msgid "Enable builtin NTP server"
 msgstr ""
 
 msgid "Enable learning and aging"
@@ -871,6 +871,9 @@ msgid "Frequency Hopping"
 msgstr "Salto de Frequência"
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1716,6 +1719,9 @@ msgstr ""
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1746,6 +1752,9 @@ msgid "Protocol of the new interface"
 msgstr ""
 
 msgid "Protocol support is not installed"
+msgstr ""
+
+msgid "Provide NTP server"
 msgstr ""
 
 msgid "Provide new network"
@@ -2447,6 +2456,9 @@ msgstr "Tipo"
 msgid "UDP:"
 msgstr ""
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
@@ -2677,6 +2689,9 @@ msgstr ""
 msgid "auto"
 msgstr "automático"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr ""
 
@@ -2708,6 +2723,12 @@ msgstr ""
 msgid "forward"
 msgstr ""
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr ""
 
@@ -2734,6 +2755,9 @@ msgstr ""
 "Ficheiro local de <abbr title=\"Sistema de Nomes de Domínios\">DNS</abbr>"
 
 msgid "no"
+msgstr ""
+
+msgid "no link"
 msgstr ""
 
 msgid "none"

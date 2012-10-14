@@ -714,13 +714,13 @@ msgstr ""
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr ""
 
 msgid "Enable VLAN functionality"
-msgstr ""
-
-msgid "Enable builtin NTP server"
 msgstr ""
 
 msgid "Enable learning and aging"
@@ -878,6 +878,9 @@ msgid "Frequency Hopping"
 msgstr "Salts de freqüència"
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1723,6 +1726,9 @@ msgstr ""
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1754,6 +1760,9 @@ msgid "Protocol of the new interface"
 msgstr ""
 
 msgid "Protocol support is not installed"
+msgstr ""
+
+msgid "Provide NTP server"
 msgstr ""
 
 msgid "Provide new network"
@@ -2463,6 +2472,9 @@ msgstr "Tipus"
 msgid "UDP:"
 msgstr ""
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
@@ -2694,6 +2706,9 @@ msgstr "qualsevol"
 msgid "auto"
 msgstr "auto"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr "pontejat"
 
@@ -2725,6 +2740,12 @@ msgstr ""
 msgid "forward"
 msgstr "transemès"
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "ajuda"
 
@@ -2751,6 +2772,9 @@ msgstr "fitxer <abbr title=\"Domain Name System\">DNS</abbr> local"
 
 msgid "no"
 msgstr "no"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr "cap"

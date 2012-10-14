@@ -691,14 +691,14 @@ msgstr ""
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr "Activeaza serverul TFTP"
 
 msgid "Enable VLAN functionality"
 msgstr "Activeaza VLAN-urile"
-
-msgid "Enable builtin NTP server"
-msgstr ""
 
 msgid "Enable learning and aging"
 msgstr ""
@@ -856,6 +856,9 @@ msgid "Frequency Hopping"
 msgstr ""
 
 msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
 msgstr ""
 
 msgid "Gateway"
@@ -1684,6 +1687,9 @@ msgstr "Port %d"
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
+msgid "Port status:"
+msgstr ""
+
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
 "ignore failures"
@@ -1714,6 +1720,9 @@ msgid "Protocol of the new interface"
 msgstr ""
 
 msgid "Protocol support is not installed"
+msgstr ""
+
+msgid "Provide NTP server"
 msgstr ""
 
 msgid "Provide new network"
@@ -2401,6 +2410,9 @@ msgstr "Tip"
 msgid "UDP:"
 msgstr "UDP:"
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
@@ -2626,6 +2638,9 @@ msgstr "oricare"
 msgid "auto"
 msgstr "auto"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
 msgstr ""
 
@@ -2655,6 +2670,12 @@ msgstr ""
 msgid "forward"
 msgstr ""
 
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
 msgstr "ajutor"
 
@@ -2681,6 +2702,9 @@ msgstr ""
 
 msgid "no"
 msgstr "nu"
+
+msgid "no link"
+msgstr ""
 
 msgid "none"
 msgstr ""
