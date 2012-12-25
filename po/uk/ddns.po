@@ -38,6 +38,9 @@ msgstr ""
 msgid "Enable"
 msgstr "Увімкнути"
 
+msgid "Event interface"
+msgstr ""
+
 msgid "Force update every"
 msgstr "Примусово оновлювати кожні"
 
@@ -52,6 +55,9 @@ msgstr "Інтерфейс"
 
 msgid "Network"
 msgstr "Мережа"
+
+msgid "On which interface up should start the ddns script process."
+msgstr ""
 
 msgid "Password"
 msgstr "Пароль"
