@@ -176,6 +176,9 @@ function sysinfo()
 	local memfree = tonumber(meminfo:match("MemFree:%s*(%d+)"))
 	local membuffers = tonumber(meminfo:match("Buffers:%s*(%d+)"))
 	local bogomips = tonumber(cpuinfo:match("[Bb]ogo[Mm][Ii][Pp][Ss].-: ([^\n]+)")) or 0
+	local swaptotal = tonumber(meminfo:match("SwapTotal:%s*(%d+)"))
+	local swapcached = tonumber(meminfo:match("SwapCached:%s*(%d+)"))
+	local swapfree = tonumber(meminfo:match("SwapFree:%s*(%d+)"))
 
 	local system =
 		cpuinfo:match("system type\t+: ([^\n]+)") or
@@ -190,7 +193,7 @@ function sysinfo()
 		nixio.uname().machine or
 		system
 
-	return system, model, memtotal, memcached, membuffers, memfree, bogomips
+	return system, model, memtotal, memcached, membuffers, memfree, bogomips, swaptotal, swapcached, swapfree
 end
 
 --- Retrieves the output of the "logread" command.
@@ -695,38 +698,29 @@ end
 function process.list()
 	local data = {}
 	local k
-	local ps = luci.util.execi("top -bn1")
+	local ps = luci.util.execi("/bin/busybox top -bn1")
 
 	if not ps then
 		return
 	end
 
-	while true do
-		local line = ps()
-		if not line then
-			return
-		end
-
-		k = luci.util.split(luci.util.trim(line), "%s+", nil, true)
-		if k[6] == "%VSZ" then
-			k[6] = "%MEM"
-		end
-		if k[1] == "PID" then
-			break
-		end
-	end
-
 	for line in ps do
-		local row = {}
+		local pid, ppid, user, stat, vsz, mem, cpu, cmd = line:match(
+			"^ *(%d+) +(%d+) +(%S.-%S) +([RSDZTW][W ][<N ]) +(%d+) +(%d+%%) +(%d+%%) +(.+)"
+		)
 
-		line = luci.util.trim(line)
-		for i, value in ipairs(luci.util.split(line, "%s+", #k-1, true)) do
-			row[k[i]] = value
-		end
-
-		local pid = tonumber(row[k[1]])
-		if pid then
-			data[pid] = row
+		local idx = tonumber(pid)
+		if idx then
+			data[idx] = {
+				['PID']     = pid,
+				['PPID']    = ppid,
+				['USER']    = user,
+				['STAT']    = stat,
+				['VSZ']     = vsz,
+				['%MEM']    = mem,
+				['%CPU']    = cpu,
+				['COMMAND'] = cmd
+			}
 		end
 	end
 

@@ -45,7 +45,11 @@ network=$(echo $network) # Removes leading and trailing whitespaces
 
 [ -n "$netrenamed" ] && [ -z "$(echo $network | grep $netrenamed)" ] && network="$network $netrenamed"
 
-if [ "$type" == "atheros" -a "$vap" == 1 ]; then
+# check if this hardware supports VAPs
+supports_vap="0"
+$dir/helpers/supports_vap.sh $net $type && supports_vap=1
+
+if [ "$supports_vap" == "1" -a "$vap" == 1 ]; then
         [ -n "$netrenamed" ] && [ "$network" == "${network/${netrenamed}dhcp/}" ] && network="$network ${netrenamed}dhcp"
 fi
 
@@ -68,7 +72,12 @@ if [ -n "$dhcprange" ]; then
 	meshnet="$(uci get profile_$community.profile.mesh_network)"
 	# check if the dhcprange is inside meshnet
 	dhcpinmesh="$($dir/helpers/check-range-in-range.sh $dhcprange $meshnet)"
-	if [ ! "$dhcpinmesh" == 1 ]; then
+	if [ "$dhcpinmesh" == 1 ]; then
+		# needed or splash will not work
+		if [ "$has_luci_splash" == TRUE ]; then
+			uci set firewall.zone_freifunk.contrack="1"
+		fi
+	else
 		uci set firewall.zone_freifunk.masq=1
 		[ -z "$(echo $currms |grep ${netrenamed}dhcp)" ] && uci add_list firewall.zone_freifunk.masq_src="${netrenamed}dhcp"
 	fi
