@@ -176,6 +176,48 @@ function config_network( c )
 		   .. _bool(   c["Forward"],    "Forward"    )
 end
 
+function config_snmp( c )
+	local str = ""
+	
+	for s in pairs(sections) do
+		if sections[s][".type"] == "collectd_snmp_data" then
+		
+			for i, k in ipairs( {
+				"DataName", "Type", "Table", "Instance", "Values"
+			}) do
+			
+				v = sections[s][k]
+				
+				if v == sections[s].DataName then
+					str = str .. '\t<Data "' .. sections[s].DataName .. '">\n'
+				else 
+					str = str .. '\t\t' .. k .. ' ' .. v .. '\n'
+				end
+			end
+			str = str .. '\t</Data>\n'
+		end
+	end 
+	
+	for s in pairs(sections) do
+		if sections[s][".type"] == "collectd_snmp_host" then
+		
+			for i, k in ipairs( {
+				"Hostname", "Address", "Version", "Community", "Collect", "Interval"
+			}) do
+			
+				v = sections[s][k]
+				
+				if v == sections[s].Hostname then
+					str = str .. '\t<Host "' .. sections[s].Hostname .. '">\n'
+				else 
+					str = str .. '\t\t' .. k .. ' ' .. v .. '\n'
+				end
+			end
+			str = str .. '\t</Host>\n'
+		end
+	end	
+	return str 
+end
 
 function _list_expand( c, l, nopad )
 	local str = ""
@@ -362,6 +404,8 @@ plugins = {
 		{ },
 		{ }
 	},
+
+	snmp = config_snmp,
 
 	olsrd = {
 		{ "Host", "Port", "CollectLinks","CollectRoutes","CollectTopology"},
