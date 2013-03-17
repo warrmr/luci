@@ -190,7 +190,11 @@ function config_snmp( c )
 				
 				if v == sections[s].DataName then
 					str = str .. '\t<Data "' .. sections[s].DataName .. '">\n'
-				else 
+				elseif v == sections[s].Type then
+					str = str .. '\t\t' .. k .. ' "' .. v .. '"\n'
+				elseif v == sections[s].Instance then
+					str = str .. '\t\t' .. k .. ' "' .. v .. '"\n'
+				else
 					str = str .. '\t\t' .. k .. ' ' .. v .. '\n'
 				end
 			end
@@ -209,7 +213,13 @@ function config_snmp( c )
 				
 				if v == sections[s].Hostname then
 					str = str .. '\t<Host "' .. sections[s].Hostname .. '">\n'
-				else 
+				elseif v == sections[s].Address then
+					str = str .. '\t\t' .. k .. ' "' .. v .. '"\n'
+				elseif v == sections[s].Community then
+					str = str .. '\t\t' .. k .. ' "' .. v .. '"\n'
+				elseif v == sections[s].Collect then
+					str = str .. '\t\t' .. k .. ' "' .. v .. '"\n'
+				else
 					str = str .. '\t\t' .. k .. ' ' .. v .. '\n'
 				end
 			end
